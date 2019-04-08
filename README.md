@@ -22,15 +22,23 @@ cd workspace
 # Update the below configurations based on the requirement in Vagrantfile
 
 vm_hostname   = "workspace"
+
 vm_box        = "ubuntu/xenial64"
+
 vm_memory     = 2048
+
 vm_cpus       = 2
+
 vm_ip         = "192.168.56.10"
+
 host_ip       = "192.168.56.1"
 
 proxy_enabled = true
+
 http_proxy    = "http://one.proxy.att.com:8888"
+
 https_proxy   = "https://one.proxy.att.com:8888"
+
 no_proxy      = "localhost,127.0.0.1,#{host_ip},#{vm_ip}"
 
 
@@ -46,5 +54,7 @@ C:\Users\%USERNAME%\.vagrant.d\insecure_private_key
 
 ssh -i "C:\Users\%USERNAME%\.vagrant.d\insecure_private_key" vagrant@192.168.56.10
 
-Note: If you want to access VM using putty then generate ppk file from C:\Users\%USERNAME%\.vagrant.d\insecure_private_key using puttygen
+Note: 
+
+If you want to access VM using putty then generate ppk file from C:\Users\%USERNAME%\.vagrant.d\insecure_private_key using puttygen
 
