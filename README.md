@@ -50,11 +50,11 @@ vagrant up
 
 Note: Vagrant private key will be created in the below path
 
-C:\Users\%USERNAME%\.vagrant.d\insecure_private_key
+C:\Users\\%USERNAME%\\.vagrant.d\insecure_private_key
 
-ssh -i "C:\Users\%USERNAME%\.vagrant.d\insecure_private_key" vagrant@192.168.56.10
+ssh -i "C:\Users\\%USERNAME%\\.vagrant.d\insecure_private_key" vagrant@192.168.56.10
 
 Note: 
 
-If you want to access VM using putty then generate ppk file from C:\Users\%USERNAME%\.vagrant.d\insecure_private_key using puttygen
+If you want to access VM using putty then generate ppk file from C:\Users\\%USERNAME%\\.vagrant.d\insecure_private_key using puttygen
 
