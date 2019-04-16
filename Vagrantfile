@@ -54,4 +54,7 @@ Vagrant.configure("2") do |config|
         apt-get update 
         sudo apt-get -y upgrade && sudo apt dist-upgrade -y && sudo apt-get autoremove -y
     SHELL
+
+    config.vm.provision "shell", path: "mysql_installer.sh"
+    
 end
